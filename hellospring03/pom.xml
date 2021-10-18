@@ -8,8 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>hellospring03</artifactId>
-	<packaging>war</packaging>
-	
+	<packaging>war</packaging>	
 	<properties>
 		<org.springframework-version>4.3.4.RELEASE</org.springframework-version>
 	</properties>
@@ -78,7 +77,7 @@
 					<url>http://127.0.0.1:8088/manager/text</url>
 					<path>/hellsping03</path>
 					<username>admin</username>
-					<password>manager</password>
+					<password>1234</password>
 				</configuration>
 			</plugin>
 		</plugins>
