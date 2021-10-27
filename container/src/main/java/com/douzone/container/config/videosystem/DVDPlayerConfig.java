@@ -14,7 +14,7 @@ public class DVDPlayerConfig {
 	public Avengers avengers() {
 		return new Avengers();
 	}
-	
+
 	// 주입(Injection)하기1
 	// Bean  생성 메소드를 직접 호출하는 방법
 	// 생성자 주입
@@ -40,4 +40,13 @@ public class DVDPlayerConfig {
 		dvdPlayer.setDvd(dvd);
 		return dvdPlayer;
 	}
+	
+	// 같은 타입의 빈을 생성할 경우
+	@Bean(name="dvdPlayer04")
+	public DVDPlayer dvdPlayer04(DigitalVideoDisc dvd) {
+		DVDPlayer dvdPlayer = new DVDPlayer(dvd);
+		dvdPlayer.setDvd(dvd);
+		return dvdPlayer;
+	}
+	
 }
